@@ -1,0 +1,60 @@
+/* styles/settings.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+#video-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.feature-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding-top: 10%;
+  color: white;
+}
+
+.feature-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.input-section {
+  margin-bottom: 40px;
+}
+
+.input-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.input-section input, .input-section select, .input-section button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-section button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.input-section button:hover {
+  background-color: #0056b3;
+}
