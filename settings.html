@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings - AI VIDEO PRO</title>
+  <link rel="stylesheet" href="styles/settings.css">
+</head>
+<body>
+  <!-- Video Background -->
+  <video autoplay muted loop id="video-bg">
+    <source src="assets/background-video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Feature Content -->
+  <div class="feature-content">
+    <h1>Settings</h1>
+
+    <!-- Language Selection -->
+    <div class="input-section">
+      <h2>Language Selection</h2>
+      <select>
+        <option value="english">English</option>
+        <option value="arabic">Arabic</option>
+        <option value="german">German</option>
+      </select>
+    </div>
+
+    <!-- API Key Management -->
+    <div class="input-section">
+      <h2>API Key Management</h2>
+      <input type="text" placeholder="Enter your API key">
+      <button>Save</button>
+    </div>
+
+    <!-- User Preferences -->
+    <div class="input-section">
+      <h2>User Preferences</h2>
+      <select>
+        <option value="default">Default Resolution</option>
+        <option value="hd">HD</option>
+        <option value="4k">4K</option>
+      </select>
+      <select>
+        <option value="realistic">Realistic Style</option>
+        <option value="cartoon">Cartoon Style</option>
+        <option value="anime">Anime Style</option>
+      </select>
+      <button>Save Preferences</button>
+    </div>
+  </div>
+
+  <script src="scripts/settings.js"></script>
+</body>
+</html>
