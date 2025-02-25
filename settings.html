@@ -2,4 +2,65 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings - AI VIDEO PRO</title>
+  <link rel="stylesheet" href="styles/feature.css">
+</head>
+<body>
+  <!-- Sliding Menu -->
+  <div class="menu">
+    <div class="menu-icon">☰</div>
+    <div class="menu-content">
+      <a href="index.html" class="home-button">Home</a>
+      <a href="image-generation.html">Image Generation</a>
+      <a href="video-generation.html">Video Generation</a>
+      <a href="voice-generation.html">Voice Generation</a>
+      <a href="settings.html">Settings</a>
+    </div>
+  </div>
+
+  <!-- Feature Content -->
+  <div class="feature-content">
+    <h1>Settings</h1>
+
+    <!-- Language Selection -->
+    <div class="feature">
+      <h2>Language Selection</h2>
+      <select>
+        <option value="english">English</option>
+        <option value="arabic">Arabic</option>
+        <option value="german">German</option>
+      </select>
+      <p>Choose your preferred language for a seamless experience.</p>
+    </div>
+
+    <!-- API Key Management -->
+    <div class="feature">
+      <h2>API Key Management</h2>
+      <input type="text" placeholder="Enter your API key">
+      <button>Save</button>
+      <p>Manage your API keys here to unlock all features.</p>
+    </div>
+
+    <!-- User Preferences -->
+    <div class="feature">
+      <h2>User Preferences</h2>
+      <select>
+        <option value="default">Default Resolution</option>
+        <option value="hd">HD</option>
+        <option value="4k">4K</option>
+      </select>
+      <select>
+        <option value="realistic">Realistic Style</option>
+        <option value="cartoon">Cartoon Style</option>
+        <option value="anime">Anime Style</option>
+      </select>
+      <button>Save Preferences</button>
+      <p>Customize your experience by setting your preferences.</p>
+    </div>
+  </div>
+
+  <script src="scripts/menu.js"></script>
+  <script src="scripts/feature.js"></script>
+</body>
+</html>
