@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - AI VIDEO PRO</title>
+  <link rel="stylesheet" href="styles/home.css">
+</head>
+<body>
+  <!-- Video Background -->
+  <video autoplay muted loop id="video-bg">
+    <source src="assets/background-video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Header -->
+  <div class="header">
+    <div class="logo">
+      <img src="assets/logo.png" alt="AI VIDEO PRO Logo">
+    </div>
+    <div class="auth">
+      <a href="#" class="login-button">Log In</a>
+      <a href="#" class="signup-button">Sign Up</a>
+    </div>
+  </div>
+
+  <!-- Language Selection -->
+  <div class="language-selection">
+    <select>
+      <option value="english">English</option>
+      <option value="arabic">Arabic</option>
+      <option value="german">German</option>
+    </select>
+  </div>
+
+  <!-- Main Menu -->
+  <div class="main-menu">
+    <h1>What would you like to create today?</h1>
+    <div class="menu-categories">
+      <div class="category">
+        <h2>Image Generation</h2>
+        <ul>
+          <li><a href="image-generation/text-to-image.html">Text-to-Image</a></li>
+          <li><a href="image-generation/face-swap.html">Face Swap</a></li>
+          <li><a href="image-generation/image-to-image.html">Image-to-Image</a></li>
+          <li><a href="image-generation/background-removal.html">Background Removal</a></li>
+          <li><a href="image-generation/subject-tracking.html">Subject Tracking</a></li>
+        </ul>
+      </div>
+      <div class="category">
+        <h2>Video Generation</h2>
+        <ul>
+          <li><a href="video-generation/text-to-video.html">Text-to-Video</a></li>
+          <li><a href="video-generation/animate-photo.html">Animate a Photo</a></li>
+          <li><a href="video-generation/video-simulation.html">Video Simulation</a></li>
+          <li><a href="video-generation/video-background.html">Background Removal</a></li>
+          <li><a href="video-generation/video-subject.html">Subject Tracking</a></li>
+          <li><a href="video-generation/video-face-swap.html">Face Swap</a></li>
+          <li><a href="video-generation/video-subtitles.html">Add Subtitles</a></li>
+        </ul>
+      </div>
+      <div class="category">
+        <h2>Voice Generation</h2>
+        <ul>
+          <li><a href="voice-generation/voice-cloning.html">AI Voice Cloning</a></li>
+        </ul>
+      </div>
+      <div class="category">
+        <h2>Settings</h2>
+        <ul>
+          <li><a href="settings.html">Preferences</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts/menu.js"></script>
+</body>
+</html>
