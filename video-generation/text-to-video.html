@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text-to-Video - AI VIDEO PRO</title>
+  <link rel="stylesheet" href="../styles/feature.css">
+</head>
+<body>
+  <!-- Video Background -->
+  <video autoplay muted loop id="video-bg">
+    <source src="../assets/background-video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Feature Content -->
+  <div class="feature-content">
+    <h1>Text-to-Video</h1>
+    <p>Bring your ideas to life! Describe your vision, and we’ll create stunning videos for you.</p>
+
+    <!-- Input Section -->
+    <div class="input-section">
+      <input type="text" placeholder="Enter a text prompt">
+      <select>
+        <option value="realistic">Realistic</option>
+        <option value="cartoon">Cartoon</option>
+        <option value="anime">Anime</option>
+        <option value="3d">3D</option>
+      </select>
+      <button>Generate</button>
+    </div>
+
+    <!-- Preview Section -->
+    <div class="preview-section">
+      <h2>Preview</h2>
+      <div id="preview"></div>
+    </div>
+  </div>
+
+  <!-- AI GPT Chat -->
+  <div class="ai-gpt">
+    <h3>Need help? Ask AI GPT!</h3>
+    <div class="chat-box">
+      <input type="text" placeholder="Ask a question...">
+      <button>Send</button>
+    </div>
+  </div>
+
+  <script src="../scripts/feature.js"></script>
+  <script src="../scripts/ai-gpt.js"></script>
+</body>
+</html>
