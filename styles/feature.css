@@ -1,0 +1,105 @@
+/* styles/feature.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background: #1a1a1a;
+  color: white;
+}
+
+/* Sliding Menu */
+.menu {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: rgba(51, 51, 51, 0.9);
+  transition: left 0.3s ease-in-out;
+  z-index: 1000;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.menu.open {
+  left: 0;
+}
+
+.menu-icon {
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+  z-index: 1001;
+  transition: color 0.3s ease-in-out;
+}
+
+.menu-icon:hover {
+  color: #007bff;
+}
+
+.menu-content {
+  padding: 20px;
+}
+
+.menu-content a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.menu-content a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateX(10px);
+}
+
+/* Feature Content */
+.feature-content {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  margin-top: 100px;
+  text-align: center;
+  color: white;
+}
+
+.feature {
+  margin-bottom: 40px;
+}
+
+.feature h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.feature input, .feature select, .feature button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.feature button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.feature button:hover {
+  background-color: #0056b3;
+}
+
+.feature p {
+  font-style: italic;
+  color: #666;
+}
