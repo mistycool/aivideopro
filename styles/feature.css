@@ -4,82 +4,38 @@ body, html {
   padding: 0;
   height: 100%;
   font-family: Arial, sans-serif;
-  background: #1a1a1a;
-  color: white;
+  overflow: hidden;
 }
 
-/* Sliding Menu */
-.menu {
+#video-bg {
   position: fixed;
   top: 0;
-  left: -250px;
-  width: 250px;
-  height: 100%;
-  background: rgba(51, 51, 51, 0.9);
-  transition: left 0.3s ease-in-out;
-  z-index: 1000;
-  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.menu.open {
   left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 
-.menu-icon {
-  position: fixed;
-  left: 20px;
-  top: 20px;
-  font-size: 2rem;
-  cursor: pointer;
-  color: white;
-  z-index: 1001;
-  transition: color 0.3s ease-in-out;
-}
-
-.menu-icon:hover {
-  color: #007bff;
-}
-
-.menu-content {
-  padding: 20px;
-}
-
-.menu-content a {
-  display: block;
-  color: white;
-  text-decoration: none;
-  margin: 10px 0;
-  padding: 10px;
-  border-radius: 5px;
-  background: rgba(255, 255, 255, 0.1);
-  transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-
-.menu-content a:hover {
-  background: rgba(255, 255, 255, 0.2);
-  transform: translateX(10px);
-}
-
-/* Feature Content */
 .feature-content {
   position: relative;
   z-index: 1;
-  padding: 20px;
-  margin-top: 100px;
   text-align: center;
+  padding-top: 10%;
   color: white;
 }
 
-.feature {
+.feature-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.feature-content p {
+  font-size: 1.2rem;
   margin-bottom: 40px;
 }
 
-.feature h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-
-.feature input, .feature select, .feature button {
+.input-section input, .input-section select, .input-section button {
   display: block;
   margin: 10px auto;
   padding: 10px;
@@ -89,17 +45,66 @@ body, html {
   border-radius: 4px;
 }
 
-.feature button {
+.input-section button {
   background-color: #007bff;
   color: white;
   cursor: pointer;
 }
 
-.feature button:hover {
+.input-section button:hover {
   background-color: #0056b3;
 }
 
-.feature p {
-  font-style: italic;
-  color: #666;
+.preview-section {
+  margin-top: 40px;
+}
+
+.preview-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#preview {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.ai-gpt {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.ai-gpt h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.chat-box input {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.chat-box button {
+  width: 25%;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.chat-box button:hover {
+  background: #0056b3;
 }
