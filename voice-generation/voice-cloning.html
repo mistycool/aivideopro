@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Voice Cloning - AI VIDEO PRO</title>
+  <link rel="stylesheet" href="../styles/feature.css">
+</head>
+<body>
+  <!-- Video Background -->
+  <video autoplay muted loop id="video-bg">
+    <source src="../assets/background-video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Feature Content -->
+  <div class="feature-content">
+    <h1>AI Voice Cloning</h1>
+    <p>Turn text into speech! Choose a voice style and language, and let AI create realistic audio for you.</p>
+
+    <!-- Input Section -->
+    <div class="input-section">
+      <input type="text" placeholder="Enter text">
+      <select>
+        <option value="male">Male Voice</option>
+        <option value="female">Female Voice</option>
+        <option value="robotic">Robotic Voice</option>
+      </select>
+      <select>
+        <option value="english">English</option>
+        <option value="arabic">Arabic</option>
+        <option value="german">German</option>
+      </select>
+      <button>Generate</button>
+    </div>
+
+    <!-- Preview Section -->
+    <div class="preview-section">
+      <h2>Preview</h2>
+      <div id="preview"></div>
+    </div>
+  </div>
+
+  <!-- AI GPT Chat -->
+  <div class="ai-gpt">
+    <h3>Need help? Ask AI GPT!</h3>
+    <div class="chat-box">
+      <input type="text" placeholder="Ask a question...">
+      <button>Send</button>
+    </div>
+  </div>
+
+  <script src="../scripts/feature.js"></script>
+  <script src="../scripts/ai-gpt.js"></script>
+</body>
+</html>
