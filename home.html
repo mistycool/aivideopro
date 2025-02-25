@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home - AI VIDEO PRO</title>
-  <link rel="stylesheet" href="styles/home.css">
+  <link rel="stylesheet" href="styles/menu.css"> <!-- Add menu.css -->
+  <link rel="stylesheet" href="styles/home.css"> <!-- Keep home.css -->
 </head>
 <body>
   <!-- Video Background -->
@@ -12,6 +13,51 @@
     <source src="assets/background-video.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
+
+  <!-- Sliding Menu (Left Side) -->
+  <div class="menu">
+    <div class="menu-icon">☰</div>
+    <div class="menu-content">
+      <a href="index.html" class="home-button">Home</a>
+      
+      <!-- Image Generation Sub-Menu -->
+      <div class="sub-menu">
+        <a href="#" class="sub-menu-header">Image Generation</a>
+        <div class="sub-menu-items">
+          <a href="image-generation/text-to-image.html">Text-to-Image</a>
+          <a href="image-generation/face-swap.html">Face Swap</a>
+          <a href="image-generation/image-to-image.html">Image-to-Image</a>
+          <a href="image-generation/background-removal.html">Background Removal</a>
+          <a href="image-generation/subject-tracking.html">Subject Tracking</a>
+        </div>
+      </div>
+
+      <!-- Video Generation Sub-Menu -->
+      <div class="sub-menu">
+        <a href="#" class="sub-menu-header">Video Generation</a>
+        <div class="sub-menu-items">
+          <a href="video-generation/text-to-video.html">Text-to-Video</a>
+          <a href="video-generation/animate-photo.html">Animate a Photo</a>
+          <a href="video-generation/video-simulation.html">Video Simulation</a>
+          <a href="video-generation/video-background.html">Background Removal</a>
+          <a href="video-generation/video-subject.html">Subject Tracking</a>
+          <a href="video-generation/video-face-swap.html">Face Swap</a>
+          <a href="video-generation/video-subtitles.html">Add Subtitles</a>
+        </div>
+      </div>
+
+      <!-- Voice Generation Sub-Menu -->
+      <div class="sub-menu">
+        <a href="#" class="sub-menu-header">Voice Generation</a>
+        <div class="sub-menu-items">
+          <a href="voice-generation/voice-cloning.html">AI Voice Cloning</a>
+        </div>
+      </div>
+
+      <!-- Settings Link -->
+      <a href="settings.html">Settings</a>
+    </div>
+  </div>
 
   <!-- Header -->
   <div class="header">
